@@ -1,6 +1,6 @@
 - name: conditions
   hosts: localhost
-  become: yes
+  become: ye
   tasks: 
   - name: check roboshop user exists or not
     ansible.builtin.command: id roboshop
@@ -16,6 +16,6 @@
       msg: "status is: {{user.rc}}" 
     
   - name: create user
-    ansible.builtin.debug:
+    ansible.builtin.user:
       name: roboshop
     when: user.rc !=0 #condition
