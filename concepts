@@ -1,0 +1,15 @@
+{
+    'changed': True, 
+'stdout': '', 
+'stderr': 'id: 
+‘roboshop’: no such user',
+'rc': 1, 
+'cmd': ['id', 'roboshop'],
+'start': '2026-05-15 15:32:51.756946',
+'end': '2026-05-15 15:32:51.761928',
+'delta': '0:00:00.004982',
+'failed': True, 
+'msg': 'non-zero return code', 
+'stdout_lines': [], 
+'stderr_lines': ['id: ‘roboshop’: no such user']}"
+}
