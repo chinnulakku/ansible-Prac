@@ -2,8 +2,13 @@
   hosts: localhost
   vars_prompt:
   - name: USERNAME
-    prompt: 
+    prompt: Please enter your username
+    private: false 
+  - name: PASSWORD
+    prompt: Please enter your password
+    private: true
   tasks:
-  - name: check variables
+  - name: print and check the values
     ansble.builtin.debug:
-      msg: "Hi, Iam learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}"
+      msg: "username is: {{Course}}, password is: {{password}}"
+      
