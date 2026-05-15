@@ -1,0 +1,9 @@
+- name: variables from prompt
+  hosts: localhost
+  vars_prompt:
+  - name: USERNAME
+    prompt: 
+  tasks:
+  - name: check variables
+    ansble.builtin.debug:
+      msg: "Hi, Iam learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}"
