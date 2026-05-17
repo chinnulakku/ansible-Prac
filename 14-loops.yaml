@@ -2,9 +2,9 @@
   hosts: localhost
   become: yes
   tasks:
-  - name:  install packages
+  - name: print install packages
     ansible.builtin.package:
-      name: "{{item}}"
+    - name: "{{item}}"
       state: present
       loop:
       - git
