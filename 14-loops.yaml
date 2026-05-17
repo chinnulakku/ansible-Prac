@@ -2,7 +2,7 @@
   hosts: localhost
   become: yes
   tasks:
-  - name: install packages
+  - name:  install packages
     ansible.builtin.package:
       name: "{{item}}"
       state: present
@@ -10,3 +10,5 @@
       - git
       - mysql
       - postfix
+      - nginx
+    
