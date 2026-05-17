@@ -2,13 +2,11 @@
   hosts: localhost
   become: yes
   tasks:
-  - name: print packages
+  - name: print package
     ansible.builtin.package:
       name: "{{item}}"
       state: present
       loop:
       - git
       - mysql
-      - postfix
-      - nginx
-    
+      - postfix 
